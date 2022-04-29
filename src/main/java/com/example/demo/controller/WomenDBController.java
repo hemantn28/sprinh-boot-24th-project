@@ -35,7 +35,7 @@ public class WomenDBController {
     @RequestMapping(value = "update_women_db",method = RequestMethod.PUT)
     public String update(@RequestParam String name,@RequestParam Integer id){
         Women women=repository.getById(id);
-        women.setName("Anandi");
+        women.setName("Suman");
         repository.save(women);
         return "women updated in DB successfully";
     }
